@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import 'package:zenn_expandable_text_sample/screens/screens.dart';
 
