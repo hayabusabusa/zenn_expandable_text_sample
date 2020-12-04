@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:zenn_expandable_text_sample/widgets/widgets.dart';
+
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,8 +20,14 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: Text('home'),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24.0),
+        child: Center(
+          child: ExpandableText(
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est ligula, sagittis vel augue ut, consectetur porta est. Aliquam in ante facilisis, volutpat diam in, elementum quam. Pellentesque consectetur, ante a scelerisque tempus, purus nibh cursus nisl, id vulputate justo turpis vitae odio.',
+            maxLines: 2,
+          ),
+        ),
       ),
     );
   }
